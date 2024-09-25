@@ -1,65 +1,91 @@
-body {
+body,h1,h2,h3,p {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat';
-    background-color: #23272A;
     box-sizing: border-box;
 }
 
-.quiz-start {
+body {
+    background-color: #23272A;
+    font-family: 'Montserrat';
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+}
+
+.quiz-start {
+    background-color: #191C1E;
+    display: flex;
+    border-radius: 30px;
+    padding: 30px;
+    max-width: 400px;
+    margin-top: 50px;
 }
 
 .quiz-content {
-    max-width: 350px;
-    padding: 120px 50px;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    background-color: #191C1E;
-    border-radius: 20px;
+    padding: 20px 0;
+}
+
+.titulo {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.subtitulo {
+    color: #fb5;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 50px;
 }
 
 .destaque {
     color: #fb5;
 }
 
-.titulo {
-    color: #fff;
-    margin: 0;
-    line-height: 1.4;
-}
-
-.subtitulo {
-    color: #fb5;
-    padding-bottom: 40px;
-}
-
 .btn {
     text-decoration: none;
     color: #fff;
-    background-color: #fb5;
-    border-radius: 10px;
-    padding: 20px 30px;
-    font-weight: bold;
     text-transform: uppercase;
+    font-weight: bold;
+    background-color: #fb5;
+    border-radius: 15px;
+    padding: 15px 0;
+    margin-bottom: 15px;
+}
+
+.quest {
+    color: #ccc;
+    background-color: #e54;
+    border-radius: 4px;
+    padding: 5px 0;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.aviso {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.last-quest {
+    background-color: #378F01;
+}
+
+.last-btn {
+    background-color: #378F01;
 }
 
 @media (max-width: 600px) {
-    body {
-        background-color: #191C1E;
+    .quiz-start {
+        margin: 20px;
     }
     .titulo {
         font-size: 1.2rem;
     }
     .subtitulo {
         font-size: 1.1rem;
-    }
-    .btn {
-        padding: 10px 20xp;
-    }
-    .quiz-content {
-        max-width: 300px;
     }
 }
