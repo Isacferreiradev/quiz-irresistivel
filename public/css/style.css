@@ -1,90 +1,65 @@
 body {
-    background-color: #23272A;
-    font-family: 'Montserrat';
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat';
+    background-color: #23272A;
     box-sizing: border-box;
+}
+
+.quiz-start {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-.iniciar-quiz {
-    max-width: 400px;
+.quiz-content {
+    max-width: 350px;
+    padding: 120px 50px;
     text-align: center;
     background-color: #191C1E;
-    padding: 80px 40px;
-    margin: 120px 60px;
-    border-radius: 40px;
+    border-radius: 20px;
+}
+
+.destaque {
+    color: #fb5;
 }
 
 .titulo {
     color: #fff;
-    font-weight: 500;
-    font-size: 1.6rem;
-    line-height: 1.5;
-}
-
-.yellow {
-    color: #fb5;
+    margin: 0;
+    line-height: 1.4;
 }
 
 .subtitulo {
     color: #fb5;
-    margin: 60px 0;
-    font-size: 1.5rem;
+    padding-bottom: 40px;
 }
 
-.start-button {
-    background-color: #fb5;
+.btn {
     text-decoration: none;
     color: #fff;
-    padding: 10px 20px;
-    border-radius: 13px;
-    font-size: 1.5rem;
-}
-
-.paragrafo {
-    color: #CCCCCC;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.options {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.options a {
-    padding: 15px;
-    font-size: 1rem;
-}
-
-.pergunta {
-    padding-bottom: 40px;
-    margin: 0;
-}
-
-.back {
-    position: absolute;
-    top: 0;
-    left: 0;
     background-color: #fb5;
-    color: #fff;
-    padding: 10px 20px;
-    margin: 20px;
-    border-radius: 4px;
-}
-
-.pvd-button {
-    background-color: #378F01;
+    border-radius: 10px;
+    padding: 20px 30px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 @media (max-width: 600px) {
-    .iniciar-quiz {
-        border-radius: initial;
+    body {
+        background-color: #191C1E;
+    }
+    .titulo {
+        font-size: 1.2rem;
+    }
+    .subtitulo {
+        font-size: 1.1rem;
+    }
+    .btn {
+        padding: 10px 20xp;
+    }
+    .quiz-content {
+        max-width: 300px;
     }
 }
